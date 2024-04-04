@@ -1,0 +1,12 @@
+<div class="row">
+    <div class="col-4" *ngFor="let e of employee">
+        <div class="card" style="width: 18rem;">
+            <img [src]="e.Image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{e.Name}}</h5>
+              <button (click)="viewData(e.id)">View</button>
+            </div>
+          </div>
+    </div>
+</div>
+
